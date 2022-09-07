@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+
+    <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Library.fs" />
+    <Compile Include="Types.fs" />
+    <Compile Include="VirtualDom\VirtualDom.Misc.fs" />
+    <Compile Include="VirtualDom\VirtualDom.Delta.fs" />
+    <Compile Include="VirtualDom\VirtualDom.Differ.fs" />
+    <Compile Include="VirtualDom\VirtualDom.Patcher.fs" />
+    <Compile Include="VirtualDom\VirtualDom.fs" />
+    <Compile Include="Components\Lib\Lib.DisposableBag.fs" />
+    <Compile Include="Components\Lib\Lib.Common.fs" />
+    <Compile Include="Components\State\State.fs" />
+    <Compile Include="Components\State\State.Adapters.fs" />
+    <Compile Include="Components\State\State.Functions.fs" />
+    <Compile Include="Components\Context\Context.EffectsHook.fs" />
+    <Compile Include="Components\Context\Context.StateHook.fs" />
+    <Compile Include="Components\Context\Context.fs" />
+    <Compile Include="Components\Component.fs" />
+    <Compile Include="Builder.fs" />
+    <Compile Include="Hosts.fs" />
+    <Compile Include="Helpers.fs" />
+    <Compile Include="View.fs" />
+    <Compile Include="DSL.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Reactive" Version="4.4.1" />
+  </ItemGroup>
+
+</Project>
